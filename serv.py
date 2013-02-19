@@ -3,6 +3,7 @@
 
 
 from config import *
+from urls import *
 import tornado.httpserver
 import tornado.ioloop
 import tornado.options
@@ -15,7 +16,7 @@ class Application(tornado.web.Application):
     def __init__(self):
         # from poweredsites.urls import handlers, sub_handlers, ui_modules
 
-        handlers.append((r"/", MainHandler))
+        # handlers.append((r"/", MainHandler))
         super(Application, self).__init__(handlers, **settings)
 
         # add handlers for sub domains

@@ -3,23 +3,20 @@
 
 """ docstring """
 
-__author__      = "Hao FengGe (xxhfg@163.com)"
-__version__     = "$Revision: 0.1 $"
-__date__        = "$Date: 2007/11/30 10:26:45 $"
-__copyright__   = "Copyright (c) 2010 Hao FengGe"
-__license__     = "Python"
+__author__ = "Hao FengGe (xxhfg@163.com)"
+__version__ = "$Revision: 0.1 $"
+__date__ = "$Date: 2007/11/30 10:26:45 $"
+__copyright__ = "Copyright (c) 2010 Hao FengGe"
+__license__ = "Python"
 
 
 import unittest
 import sys
 import os
+import libs
+import tests
 
-sys.path.append(os.curdir)
-sys.path.append(os.pardir)
-sys.path.append(os.path.join(os.curdir, 'tests'))
 
-ColorUnittest_Path = r'D:\python-module'
-sys.path.append(ColorUnittest_Path)
 from ColorUnittest.myunittest import MyTestRunner
 
 tests = os.listdir(os.curdir)
