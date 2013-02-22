@@ -30,12 +30,12 @@ except ImportError:
 import books
 
 
-class HelloWorldHandler(RequestHandler):
-    def get(self):
-        name = self.get_argument("name", "world")
-        self.set_header("Content-Type", "text/plain")
-        self.finish("Hello %s!" % name)
-
+#class HelloWorldHandler(RequestHandler):
+#    def get(self):
+#        name = self.get_argument("name", "world")
+#        self.set_header("Content-Type", "text/plain")
+#        self.finish("Hello %s!" % name)
+#
 
 class HTTPClientCommonTestCase(AsyncHTTPTestCase):
     def get_app(self):

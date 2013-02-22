@@ -13,10 +13,10 @@ from config import *
 handlers = [
     (r"/(favicon\.ico)", tornado.web.StaticFileHandler,
      dict(path=MEDIA_ROOT)),
-    (r"/static/(.+)", tornado.web.StaticFileHandler,
-     dict(path=MEDIA_ROOT, name='static_path')),
-    (r"/media/(.+)", tornado.web.StaticFileHandler,
-     dict(path=MEDIA_ROOT, name='media_path')),
+    # (r"/static/(.+)", tornado.web.StaticFileHandler,
+    # dict(path=MEDIA_ROOT, name='static_path')),
+    # (r"/media/(.+)", tornado.web.StaticFileHandler,
+    # dict(path=MEDIA_ROOT, name='media_path')),
 ]
 # handlers.append(('.*', tornado.web.FallbackHandler,
                  # dict(fallback=WSGIContainer(WSGIHandler()))))
